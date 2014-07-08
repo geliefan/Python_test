@@ -1,0 +1,9 @@
+# -*- coding: cp932 -*-
+# ‚S•”‚Ì‚Ü‚Æ‚ß‰‰K
+
+#2.
+def adder(x,y):
+    print x + y
+    
+adder(1,2)
+adder("aa","bb")
