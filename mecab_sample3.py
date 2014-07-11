@@ -13,10 +13,12 @@ def extractKeyword(text):
     return keywords
 
 if __name__ == "__main__":
-    keywords = extractKeyword(u"PythonからMeCabの形態素解析機能を使ってみました。")
+    keywords = extractKeyword(u"改竄されたサイトを特定の環境で閲覧するとIEがクラッシュし、その背後でコードが実行され、情報漏洩の原因となるマルウェアに感染する
+")
     for w in keywords:
         print w,
     print
+                              
     keywords = extractKeyword(u"菅直人首相は野党の出方や世論を見極めつつ判断する考えだ。")
     for w in keywords:
         print w,
