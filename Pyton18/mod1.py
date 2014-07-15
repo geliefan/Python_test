@@ -1,0 +1,6 @@
+X = 1
+import mod2
+
+print X,
+print mod2.X,
+print mod2.mod3.X
