@@ -1,13 +1,15 @@
-def countLines(name):
-    file = open(name)
+def countLines(file):
+    file.seek(0)
     return len(file.readlines())
 
-def countChars(name):
-    file = open(name,"r").read()
-    return len(file)
+def countChars(file):
+    file.seek(0)
+    return len(file.read())
 def test(name):
-    return countLines(name), countChars(name)
+    file = open(name)
+    return countLines(file), countChars(file)
 
-name = 'text.txt'
-print test(name)
+if __name__ == '__main__':
+    name = 'text.txt'
+    print test(name)
 
